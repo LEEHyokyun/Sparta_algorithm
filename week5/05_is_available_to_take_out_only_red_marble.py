@@ -90,3 +90,5 @@ def is_available_to_take_out_only_red_marble(game_map):
 
 
 print(is_available_to_take_out_only_red_marble(game_map))  # True 를 반환해야 합니다
+
+print(" hi hi hi ")
