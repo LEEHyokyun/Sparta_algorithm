@@ -7,10 +7,13 @@ def get_absent_student(all_array, present_array):
 
     student_dict = {} #학생들은 담는 딕셔너리, 해쉬테이블로 사용시 {}로 표현해야함!!
     for key in all_array:
+        print("current key in all_array is", key)
         student_dict[key] = True #키 등록
+        print("current student_dict is", student_dict)
 
     for key in present_array:
         del student_dict[key] #출석한 학생의 키 삭제
+        print("After del, current student_dict is", student_dict)
 
     for key in student_dict.keys():
         return key
