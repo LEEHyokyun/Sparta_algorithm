@@ -17,13 +17,17 @@ def merge(array1, array2):
             array_c.append(array2[array2_index])
             array2_index = array2_index + 1
 
-    if array1_index == len(array1): #array1을 다 넣었따
-        while array2_index < len(array2): #array2를 모두 넣는다
+    if array1_index == len(array1): #array1을 다 넣었고, array2 원소가 남은 상황
+        print("array_index =", array1_index)
+
+        while array2_index < len(array2): #array2를 그대로 붙인다.
             array_c.append(array2[array2_index])
             array2_index = array2_index + 1
 
-    if array2_index == len(array2): #array2를 다 넣었다
-        while array1_index < len(array1): #array1을 모두 넣는다
+    if array2_index == len(array2): #array2를 다 넣었고, array1 원소가 남은 상황
+        print("array2_index =", array2_index)
+
+        while array1_index < len(array1): #array1을 그대로 붙인다.
             array_c.append(array2[array1_index])
             array1_index = array1_index + 1
 
