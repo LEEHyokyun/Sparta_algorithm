@@ -36,9 +36,11 @@ class Stack:
         return self.head.data
 
     # isEmpty 기능 구현
-    def is_empty(self):
-        # 어떻게 하면 될까요?
-        return self.head is None
+
+
+def is_empty(self):
+    # 어떻게 하면 될까요?
+    return self.head is None
 
 stack = Stack()
 stack.push(3)
