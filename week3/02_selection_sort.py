@@ -12,5 +12,7 @@ def selection_sort(array):
                 min_index = i + j
         array[i], array[min_index] = array[min_index], array[i]
 
+        print(array)
+
 selection_sort(input)
 print(input) # [1, 2, 4, 6, 9] 가 되어야 합니다!
