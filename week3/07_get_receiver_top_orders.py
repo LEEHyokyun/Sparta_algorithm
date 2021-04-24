@@ -17,6 +17,8 @@ def get_receiver_top_orders(heights):
     answer = [0] * len(heights) # 0 0 0 0 0
     while heights: #heights가 빈 상태가 아닐떄까지
         height = heights.pop()
+        print("poped node is", height)
+
         for idx in range(len(heights) - 1, 0, -1): #인덱스가 -1까지 비교를 해야함
             if heights[idx] > height:
                 answer[len(heights)] = idx + 1 #가장 높은 탑의 인덱스로 업데이트 해줘야함
