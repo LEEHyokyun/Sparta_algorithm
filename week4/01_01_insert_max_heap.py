@@ -2,6 +2,8 @@
 # 2. 지금 넣은 새노드를 부모와 비교하고, 부모보다 크다면 교체.
 # 3. 과정을 맨 위로 올라갈때까지 반복한다.
 
+# heap을 구현하기위해 기본적으로 필요한 방법은 트리.
+
 class MaxHeap:
     def __init__(self):
         self.items = [None]
@@ -14,6 +16,8 @@ class MaxHeap:
         self.items.append(value)
 
         cur_index = len(self.items) - 1
+        print('len(self.items) is', len(self.items))
+        print('cur index is', cur_index)
 
         while cur_index > 1:  # 꼭대기 올라가면 중단
             parent_index = cur_index // 2
