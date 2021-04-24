@@ -38,3 +38,5 @@ class LinkedDict:
         #키가 동일하면 value를 반환해준다
         return self.items[index].get(key)
 
+
+LinkedTuple.add("test", 1)
