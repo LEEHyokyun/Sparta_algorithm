@@ -20,9 +20,13 @@ def merge_sort(array):
         return array
 
     mid = len(array) // 2
+    print("mid index is #1", mid)
     left_array = merge_sort(array[:mid]) #0부터 mid인덱스까지의 array
+    print(left_array)
     right_array = merge_sort(array[mid:len(array)]) #mid부터 인덱스까지의 array
+    print(right_array)
 
+    print("mid index is #2", mid)
     print(array)
     print('left_array', left_array)
     print('right_array', right_array)
@@ -51,6 +55,8 @@ def merge(array1, array2):
             result.append(array1[array1_index])
             array1_index += 1
 
+    print("result is", result)
+    print("array is", array)
     return result
 
 
