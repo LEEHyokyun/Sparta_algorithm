@@ -60,5 +60,5 @@ linked_list.get_node(0) # -> 5를 들고 있는 노드를 반환해야 합니다
 #linked_list.add_node(1,6) # 5 12 6 8 (5 6 12 8?)
                           # index가 1이면 두번쨰 노드값을 잡아서 뒤에서 연결한 것임
                           # 따라서 index번쨰에 넣기위해선 index-1 노드를 불러와야함
-linked_list.add_node(1,6) #index-1 과 추가하고 싶은 숫자 추가
+linked_list.add_node(1, 6) #index-1 과 추가하고 싶은 숫자 추가
 linked_list.print_all()
