@@ -16,6 +16,12 @@ class Dict:
         index = hash(key) % len(self.items) #인덱스값을 구하는과정, 배열크기 인덱스만큼!
         self.items[index] = value
 
+        print("index is=", index)
+        print("key is=", key)
+        print("hash value is=", hash(key))
+        print("value is=", value)
+
+
     def get(self, key):
 
         index = hash(key) % len(self.items)
